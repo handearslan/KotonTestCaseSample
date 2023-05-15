@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.10.0 on win32)" generated="20230515 23:33:12.001" rpa="false" schemaversion="3">
+<suite id="s1" name="Robot Framework" source="C:\Users\HANDE ARSLAN\Desktop\robot_framework">
+<suite id="s1-s1" name="Robot Framework" source="C:\Users\HANDE ARSLAN\Desktop\robot_framework\robot_framework">
+<suite id="s1-s1-s1" name="Test" source="C:\Users\HANDE ARSLAN\Desktop\robot_framework\robot_framework\test">
+<suite id="s1-s1-s1-s1" name="Koton" source="C:\Users\HANDE ARSLAN\Desktop\robot_framework\robot_framework\test\koton.robot">
+<test id="s1-s1-s1-s1-t1" name="Scenario" line="18">
+<kw name="Create session">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.amazon.com.tr/gp/browse.html?node=12466553031&amp;ref_=nav_cs_fashion</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230515 23:33:12.434" level="INFO">Opening browser 'chrome' to base url 'https://www.amazon.com.tr/gp/browse.html?node=12466553031&amp;ref_=nav_cs_fashion'.</msg>
+<msg timestamp="20230515 23:33:12.446" level="INFO">Applicable driver not found; attempting to install with Selenium Manager (Beta)</msg>
+<status status="PASS" starttime="20230515 23:33:12.432" endtime="20230515 23:33:20.621"/>
+</kw>
+<status status="PASS" starttime="20230515 23:33:12.432" endtime="20230515 23:33:20.622"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230515 23:33:20.622" endtime="20230515 23:33:20.752"/>
+</kw>
+<kw name="Go to kotonhomepage">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css=#sp-cc-accept</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230515 23:33:20.755" level="INFO">Clicking element 'css=#sp-cc-accept'.</msg>
+<status status="PASS" starttime="20230515 23:33:20.754" endtime="20230515 23:33:20.854"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>css=#sobe_d_b_2_4 &gt; a &gt; div.sl-sobe-carousel-sub-card-image</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230515 23:33:20.855" level="INFO">Clicking element 'css=#sobe_d_b_2_4 &gt; a &gt; div.sl-sobe-carousel-sub-card-image'.</msg>
+<status status="PASS" starttime="20230515 23:33:20.854" endtime="20230515 23:33:25.689"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath=//div[@data-asin='B0BX4CKPW9']//span[text()='Koton']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230515 23:33:25.689" endtime="20230515 23:33:25.726"/>
+</kw>
+<status status="PASS" starttime="20230515 23:33:20.753" endtime="20230515 23:33:25.726"/>
+</kw>
+<kw name="Close session">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20230515 23:33:25.727" endtime="20230515 23:33:32.035"/>
+</kw>
+<status status="PASS" starttime="20230515 23:33:25.726" endtime="20230515 23:33:32.035"/>
+</kw>
+<status status="PASS" starttime="20230515 23:33:12.431" endtime="20230515 23:33:32.035"/>
+</test>
+<status status="PASS" starttime="20230515 23:33:12.052" endtime="20230515 23:33:32.037"/>
+</suite>
+<status status="PASS" starttime="20230515 23:33:12.049" endtime="20230515 23:33:32.039"/>
+</suite>
+<status status="PASS" starttime="20230515 23:33:12.045" endtime="20230515 23:33:32.041"/>
+</suite>
+<status status="PASS" starttime="20230515 23:33:12.007" endtime="20230515 23:33:32.042"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Robot Framework">Robot Framework</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Robot Framework">Robot Framework.Robot Framework</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Test">Robot Framework.Robot Framework.Test</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1" name="Koton">Robot Framework.Robot Framework.Test.Koton</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
